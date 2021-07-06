@@ -2,7 +2,7 @@ FROM python:3.7
 
 COPY D:\my_space\end to end\StonePaperScissor /home
 
-WORKDIR /home/
+WORKDIR /home
 
 ADD . .
 
