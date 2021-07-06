@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/index-style.css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> -->
+        <title>
+            Rock-Paper-Scissor
+        </title>
+    </head>
+    <body>
+        <div class="container-fluid d-flex styler1">
+            <div class="main-body">
+                <div class="card d-flex justify-center">
+                    <div class="card-body d-flex align-center styler1 justify-center">
+                        <h2 class="">Score Board</h2>
+                        <div class="d-flex styler3 align-center margin1">
+                            <label class="label-header">Player - </label>
+                             <div class="label-header" >
+                                <h3>{{player}}</h3>
+                              </div>
+                             <div class="label-header" >
+                                <h3>|</h3>
+                             </div>
+                              <div class="label-header" >
+                                <h3>{{cpu}}</h3>
+                              </div>
+                            <!--<input id="PlayerScore" name="PlayerScore" type="text" class="input-group h-100p">
+                            <input id="CPUScore" name="CPUScore" type="text" class="input-group h-100p",value={{player}}-->
+                            <label class="label-header"> - CPU</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-body custom-margin1">
+                <form class="d-flex styler1" action="{{ url_for('play')}}"method="post">
+                    <div class="card d-flex justify-center styler2 custom-margin2">
+                        <input type="radio" name="playerOption" id="playerOptionRock" value="rock" />
+                        <label class="labels" for="playerOptionRock">
+                            <img src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/Limestone-060-RD010-C-SH_by22j3.jpg"
+                                alt="Image 1" class="img-class">
+                        </label>
+                        <input type="radio" name="playerOption" id="playerOptionPaper" value="paper" />
+                        <label class="labels" for="playerOptionPaper">
+                            <img src="https://neal.fun/paper/minified/paper.jpg" alt="Image 2" class="img-class">
+                        </label>
+                        <input type="radio" name="playerOption" id="playerOptionScissor" value="scissor" />
+                        <label class="labels" for="playerOptionScissor">
+                            <img src="https://media.istockphoto.com/photos/open-scissors-picture-id1168085197?b=1&k=6&m=1168085197&s=170667a&w=0&h=A5k29sZLqsgD6cncc5S25nrunD7pPAVaA3H5eWAE0LY="
+                                alt="Image 3" class="img-class">
+                        </label>
+                    </div>
+                    <div class="d-flex align-self-center">
+                        <button type="submit" class="btn btn-success">Play</button>
+                        <h3>{{ error }}</h3>
+                    </div>
+                    <div class="d-flex align-self-center">
+                        <h2><br>{{ result }}<br></h2>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>

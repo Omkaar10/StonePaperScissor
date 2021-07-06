@@ -1,0 +1,114 @@
+.container-fluid {
+    outline: 2px solid blue;
+    vertical-align: middle;
+}
+
+.main-body {
+    height: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.input-group {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.styler1 {
+    flex-flow: column nowrap;
+}
+
+.styler2 {
+    flex-flow: row nowrap;
+}
+
+.h-100p {
+    height: 100px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.img-class {
+    height: 250px;
+    width: 20%;
+    background-color: darkslategray;
+    outline: 5px solid #673ab7;
+    padding: 20px;
+    margin: 25px;
+}
+
+.lower-body {
+    top: 40%;
+}
+
+.labels {
+    display: contents;
+    cursor: pointer;
+}
+
+.hidden {
+    /* display: none; */ /* To hide checkboxes uncomment this property */
+}
+
+.margin1 {
+    margin: 3% 0;
+}
+
+.custom-margin1 {
+    margin-top: 0.5%;
+}
+
+.custom-margin2 {
+    margin-top: 1%;
+}
+
+.label-header {
+    padding: 0px 10px;
+    font-size: larger;
+    font-weight: 800;
+    font-family: cursive;
+}
+
+.btn-success {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Create two equal columns that floats next to each other
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100px;
+  background-color: #aaa;
+}
+*/
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
