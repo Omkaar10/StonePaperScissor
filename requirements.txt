@@ -1,0 +1,11 @@
+certifi==2021.5.30
+click
+Flask
+gunicorn==20.1.0
+importlib-metadata
+itsdangerous
+Jinja2
+MarkupSafe
+simpleaudio==1.0.4
+wincertstore==0.2
+zipp
