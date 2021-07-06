@@ -8,6 +8,4 @@ ADD . .
 
 RUN pip install -r requirements.txt
 
-EXPOSE 6111
-
 CMD [ "python", "app.py" ]
