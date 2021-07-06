@@ -42,4 +42,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: omkaar10/python-helloworld:latest
+          tags: omkaar10/rockpaperscissor:latest
