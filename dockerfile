@@ -1,6 +1,6 @@
 FROM python:3.7
 
-COPY D:\my_space\end to end\StonePaperScissor /home
+COPY . /home
 
 WORKDIR /home
 
